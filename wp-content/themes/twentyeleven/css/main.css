@@ -1,0 +1,259 @@
+/*
+Theme Name: twentyeleven
+Theme URI: http://boji.com
+Author: Mickle
+Author URI: http://wordpress.org/
+Description: twentyeleven for boji company
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentyeleven
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.header {
+    width: 100%;
+    height: 68px;
+    position: fixed;
+    top: 0;
+    background-color: #3e3f41;
+    z-index: 10000;
+}
+
+.header .logo {
+    margin: 20px auto auto auto;
+}
+
+.header-menu {
+    margin: 25px auto auto auto;
+}
+
+.header-menu li {
+}
+
+.header-menu li a {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.main-a {
+    width: 100%;
+    height: 450px;
+    background-color: #e8e6e6;
+    margin: 38px auto auto auto;
+    background-image: url("../images/main-a-bg.png");
+    background-size: 100% 100%;
+}
+
+.main-a-body {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.main-a-body .span7 {
+    margin: 75px 0 0 0;
+}
+
+.main-a-body .main-a-l {
+    margin: 0 0 0 75px;
+}
+
+.main-a-body .span5 {
+    margin: 40px 0 0 0;
+}
+
+.main-a-body .main-a-p {
+    font-size: 33px;
+    color: #ffffff;
+    margin: 0 0 0 40px;
+}
+
+.main-a-body .main-a-p p {
+    text-align: center;
+    line-height: 50px;
+}
+
+.main-a-body .main-a-login {
+    margin: 40px 0 0 85px;
+}
+
+.main-a-body .main-a-test {
+    margin: 40px 0 0 85px;
+}
+
+.main-b {
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+}
+
+#slider {
+    width: 100%;
+    height: auto;
+    background: #e8e6e6 url("../images/slider-bg.png") repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+#slider .main-c {
+    width: 65%;
+    margin: 75px auto 0 auto;
+    height: 350px;
+}
+
+#myCarousel {
+}
+
+
+
+/*.main-c #myCarousel .carousel-control {
+    background: none repeat scroll 0 0 #222222;
+    border: 3px solid #FFFFFF;
+    border-radius: 23px;
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 100;
+    height: 40px;
+    left: 15px;
+    line-height: 30px;
+    margin-top: -20px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 40px;
+}*/
+
+.main-d {
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+}
+
+.main-e {
+    width: 100%;
+    height: auto;
+    background-color: #fbfbfb;
+}
+
+.main-f {
+    background-color: #EEEEEE;
+}
+
+/*===============================*/
+
+.main-f .userExperience_list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.userExperience_item {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.userAvatar {
+    float: left;
+    height: 60px;
+    width: 60px;
+}
+
+
+.userSay {
+    color: #666666;
+    float: left;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-right: 112px;
+    width: 770px;
+}
+
+.userName {
+    color: #ACACAC;
+    float: right;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.clearB {
+    clear: both;
+}
+
+/*===============================*/
+
+.main-g {
+    background-color: #ffffff;
+    height: auto;
+}
+
+/*===============================*/
+
+.main-g .index_company {
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 30px 0;
+    width: 100%;
+}
+
+
+.companyList {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    width: 80%;
+}
+
+.companyList a {
+    width: 25%;
+}
+
+
+
+
+/*===============================*/
+
+.footer {
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    background-color: #2875a8;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer a {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer .about-join-contact {
+    margin: 35px;
+    position:relative;
+    left: 50%;
+}
+
+.footer .domain {
+    margin: 35px;
+}
+
+.footer .domain a {
+    font-size: 30px;
+}
+.footer .icp {
+    position:relative;
+    font-size: 34px;
+    height:30px;
+    width:100%;
+    left:-54%;
+    margin-top:60px
+}
