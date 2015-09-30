@@ -127,7 +127,7 @@
   			}
   		});
   		$.scrollIt();
-  	};  
+  	};
 
   	// Contact form validation
   	function contactFormValid() {
