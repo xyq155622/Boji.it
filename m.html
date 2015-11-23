@@ -350,6 +350,11 @@
     // initialise
     headroom.init();
 
+    var _slider = $("#cmc-carousel");
+    _slider.carousel({
+        interval: 3000
+    });
+
     $('#cmc-navbar-collapse ul li a').click( function(e) {
         $('.collapse').collapse('hide')
     });
