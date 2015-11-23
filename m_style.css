@@ -8,8 +8,8 @@ body {
 nav {
     width: 100%;
     height: 350px;
-    background: url(img/home-bg.jpg) no-repeat center top fixed;
-    background-size: 100% 350px;
+    background: url(img/home-bg-m.jpg);
+    background-size: cover !important;
     display: table;
 }
 
@@ -43,9 +43,7 @@ h1,h2,h3,h4,h5,h6{color:#323232;margin-bottom:0;margin-top:0;}
     background-color: #f3f3f3;
 }
 .section1 .features {
-    background: url(img/story-bg.jpg);
-    background-attachment: fixed !important;
-    background-size: cover !important;
+    background: url(img/story-bg-m.jpg);
 }
 .section1 .features .container {
     padding: 30px 15px;
@@ -53,7 +51,8 @@ h1,h2,h3,h4,h5,h6{color:#323232;margin-bottom:0;margin-top:0;}
 }
 
 .section1 .features1 {
-    background: url(img/numbers-bg.jpg) no-repeat center  center fixed;
+    background: url(img/numbers-bg-m.jpg);
+    background-size: cover !important;
     color: #fff;
 }
 
@@ -116,8 +115,7 @@ h1,h2,h3,h4,h5,h6{color:#323232;margin-bottom:0;margin-top:0;}
 }
 .section3 .features {
     margin-top: 60px;
-    background: url(img/map-bg.jpg);
-    background-attachment: fixed !important;
+    background: url(img/map-bg-m.jpg);
     background-size: cover !important;
 }
 .section3 .features .container {
