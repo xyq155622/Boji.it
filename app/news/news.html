@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>医疗资讯</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="../json/news.js"></script>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+
+<div class="news">
+    <div class="title">
+        <span class="word">
+            医疗资讯
+        </span>
+    </div>
+<ul class="list" id="news-list">
+
+</ul>
+<div class="load">
+    <a href="javascript:;">加载更多</a>
+</div>
+</div>
+
+
+<script>
+    window.onload = function(){
+        var _newsList = $("#news-list");
+
+        var _html = '';
+        $.each(NewsList, function(prop, val){
+            _html += '<li class="element"><div class="type">' + val.category + '</div><div class="wrap"><div class="left describe"><div class="name">';
+            _html += '<a href=' + 'article.html?_id=' + val._id + '>' + val.title + '</a></div>';
+            _html += '<p class="content">' + val.subTitle + '</p></div>';
+            _html += '<div class="right img">' + '<a href=' + 'article.html?_id=' + val._id + '><img src=' + val.picurl + '></a></div></div>';
+            _html += '<div class="foot"><span class="name">' + val.tab + '</span>';
+            _html += '<span class="deta">' + val.createTime + '</span></div>';
+        });
+        _newsList.append(_html);
+    }
+</script>
+</body>
+</html>

@@ -25,7 +25,7 @@ var QuestionList = [
             "_id": "d004",
             "_name": "危小良",
             "field": "主治医师",
-            "picurl": "img/doctor.png",
+            "picurl": "../img/question/doctor.png",
             "company": "中山大学附属第五医院"
         }
     },
@@ -47,7 +47,7 @@ var QuestionList = [
             "_id": "d002",
             "_name": "卓美英",
             "field": "副主任医师",
-            "picurl": "img/doctor.png",
+            "picurl": "../img/question/doctor.png",
             "company": "广州市第一人民医院（三级甲等）"
         }
     },
@@ -69,7 +69,7 @@ var QuestionList = [
             "_id": "d002",
             "_name": "卓美英",
             "field": "副主任医师",
-            "picurl": "img/doctor.png",
+            "picurl": "../img/question/doctor.png",
             "company": "广州市第一人民医院（三级甲等）"
         }
     },
@@ -91,7 +91,7 @@ var QuestionList = [
             "_id": "d003",
             "_name": "汪星星",
             "field": "副主任医师",
-            "picurl": "img/doctor.png",
+            "picurl": "../img/question/doctor.png",
             "company": "广州医学院荔湾医院（二级甲等）"
         }
     },
@@ -113,7 +113,7 @@ var QuestionList = [
             "_id": "d003",
             "_name": "汪星星",
             "field": "副主任医师",
-            "picurl": "img/doctor.png",
+            "picurl": "../img/question/doctor.png",
             "company": "广州医学院荔湾医院（二级甲等）"
         }
     },
@@ -139,7 +139,7 @@ var QuestionList = [
             "_id": "d004",
             "_name": "危小良",
             "field": "主治医师",
-            "picurl": "img/doctor.png",
+            "picurl": "../img/question/doctor.png",
             "company": "中山大学附属第五医院"
         }
     },
@@ -161,7 +161,7 @@ var QuestionList = [
             "_id": "d001",
             "_name": "杨军林",
             "field": "主任医师",
-            "picurl": "img/doctor.png",
+            "picurl": "../img/question/doctor.png",
             "company": "中山大学附属第一医院"
         }
     }
@@ -172,7 +172,7 @@ var DoctorList = [
         "_id": "d001",
         "_name": "杨军林",
         "field": "主任医师",
-        "picurl": "img/doctor.png",
+        "picurl": "../img/question/doctor.png",
         "company": "中山大学附属第一医院",
         "department": "外科",
         "description": "简介：杨军林  教授、主任医师、医学博士、骨科博士后、博士生导师中山大学附属第一医院骨科及显微医学部（大",
@@ -198,7 +198,7 @@ var DoctorList = [
         "_id": "d002",
         "_name": "卓美英",
         "field": "副主任医师",
-        "picurl": "img/doctor.png",
+        "picurl": "../img/question/doctor.png",
         "company": "广州市第一人民医院（三级甲等）",
         "department": "儿科",
         "description": "简介：1964年毕业于武汉医学院医疗系（现华中科技大学同济医学院）。广州市妇女儿童保健工作委员会儿童保健专",
@@ -232,7 +232,7 @@ var DoctorList = [
         "_id": "d003",
         "_name": "汪星星",
         "field": "副主任医师",
-        "picurl": "img/doctor.png",
+        "picurl": "../img/question/doctor.png",
         "company": "广州医学院荔湾医院（二级甲等）",
         "department": "妇产科",
         "description": "简介：广州市政协委员、广州市医学会委员、广州医学院荔湾医院妇产科大科主任、广州伊丽莎白妇产医院妇产科首席专",
@@ -266,7 +266,7 @@ var DoctorList = [
         "_id": "d004",
         "_name": "危小良",
         "field": "主治医师",
-        "picurl": "img/doctor.png",
+        "picurl": "../img/question/doctor.png",
         "company": "中山大学附属第五医院",
         "department": "内科",
         "description": "毕业于中山大学研究生临床专业，中山大学附属第五医院心血管内科主治医师，擅长高血压、冠心病、心衰等心血管常见",
