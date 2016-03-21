@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>医生</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="js/data.js"></script>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="doctor-info">
+        <div class="doctor-pic">
+            <div class="d-pic" id="_doctor_picurl">
+                <img >
+            </div>
+        </div>
+        <div class="doctor-detail">
+            <p class="d-name" id="_doctor_name"></p>
+            <div class="d-info">
+                <span id="_doctor_field"></span><br>
+                <span id="_doctor_company"></span><span id="_doctor_department" class="department"></span>
+            </div>
+            <div class="desc">
+                <span class="_doctor_description"></span>
+                <span id="open_desc">
+                ...<a href="javascript:;">展开</a>
+                </span>
+                <span id="close_desc" style="display:none;" class="_doctor_subDescription">
+                    <a href="javascript:;">收起</a>
+                </span>
+            </div>
+        </div>
+        <a class="ask-for-doctor" href="javascript:;">向医生提问</a>
+    </div>
+
+    <div class="doctor-num">
+        <ul>
+            <li><span><em id="_doctor_num_answer"></em></span>
+                <span>回答人数</span>
+            </li>
+            <li><span><em id="_doctor_num_help"></em></span>
+                <span>帮助人数</span>
+            </li>
+            <li><span><em id="_doctor_num_good"></em></span>
+                <span>好评数</span>
+            </li>
+            <li>
+                <span>
+                    <b>☆☆☆☆☆<em style="width:0%;" id="_doctor_star_good_ratio">★★★★★</em></b>
+                </span>
+                <span id="_doctor_num_good_ratio"></span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="hot-question">
+        专业答题
+    </div>
+
+    <div id="question-list">
+
+    </div>
+</div>
+
+<script>
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return encodeURI(r[2]); return null;
+    }
+    window.onload = function(){
+        var doctor_id = getUrlParam('_id');
+        var doctor = {};
+        if(doctor_id) {
+            for (var i in DoctorList) {
+                if(doctor_id == DoctorList[i]._id) {
+                    doctor = DoctorList[i];
+                }
+            }
+
+            $('#_doctor_picurl img')[0].setAttribute('src', doctor.picurl);
+            $('#_doctor_name')[0].innerHTML = doctor._name;
+            $('#_doctor_field')[0].innerHTML = doctor.field;
+            $('#_doctor_company')[0].innerHTML = doctor.company;
+            $('#_doctor_department')[0].innerHTML = doctor.department;
+            $('#_doctor_num_answer')[0].innerHTML = doctor.num.answer;
+            $('#_doctor_num_help')[0].innerHTML = doctor.num.help;
+            $('#_doctor_num_good')[0].innerHTML = doctor.num.good;
+            $('#_doctor_num_good_ratio')[0].innerHTML = doctor.num.good_ratio + "好评";
+            $('#_doctor_star_good_ratio')[0].style.width = doctor.num.good_ratio;
+            $('._doctor_description')[0].innerHTML = doctor.description;
+            $('._doctor_subDescription').prepend(doctor.subDescription);
+
+            var open_desc = $("#open_desc");
+            var close_desc = $("#close_desc");
+            $("#open_desc a").bind("click",function(){
+                open_desc[0].style.display = 'none';
+                close_desc[0].style.display = '';
+            });
+            $("#close_desc a").bind("click",function(){
+                open_desc[0].style.display = '';
+                close_desc[0].style.display = 'none';
+            });
+
+            var questionList = $("#question-list");
+            var _questionList = '';
+            $.each(doctor.questions, function(prop, val){
+                _questionList += '<a class="question-item-box box" href=' + 'answer.html?_id=' + val._id + '>';
+                _questionList += '<p class="title"><em>问：</em>' + val.title + '</p>';
+                _questionList += '<p class="content">答：' + val.content + '</p>';
+                _questionList += '<p class="datetime">' + val.answerTime + '</p>';
+                _questionList += '</a>';
+            });
+            questionList.append(_questionList);
+        }
+    }
+</script>
+</body>
+</html>

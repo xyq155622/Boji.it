@@ -1,0 +1,355 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+ol, ul, p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #ececec;
+    font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;;
+    font-size: 16px;
+    color: #000;
+    word-wrap: break-word;
+}
+
+a {
+    color: #274E9C;
+    text-decoration: none;
+}
+
+.clear:after {
+    content: '';
+    clear: both;
+    overflow: hidden;
+    height: 0;
+    display: block;
+}
+
+.hot-question {
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1.2;
+}
+
+.box {
+    padding: 10px;
+    background: #fff;
+}
+
+.question-item-box {
+    display: block;
+    position: relative;
+    margin: 0 5px 10px;
+    border: 1px solid #c6c6c6;
+}
+
+.question-item-box .title {
+    color: #000;
+    margin-bottom: 10px
+}
+
+.question-item-box .title em {
+    font-style: normal;
+    color: #54aaca
+}
+
+.question-item-box .content {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    max-height: 88px
+}
+
+.question-item-box .datetime {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 10px
+}
+
+.wrapper time {
+    float: right;
+    font-size: 11px;
+    color: #b8bdbf
+}
+
+.wrapper .section-bottom {
+    margin: 0 0 10px;
+    background: #fff;
+    border-bottom: 1px solid #ecedf0
+}
+
+.wrapper .oper-wrap {
+    position: relative;
+    padding-top: 27px;
+    margin-top: 10px;
+}
+
+.question-box {
+    margin-bottom: 45px;
+}
+
+.question-box h2 {
+    line-height: 23px;
+    font-size: 16px;
+    margin: 4px 0;
+    font-weight: 700;
+    color: #333
+}
+
+.question-box h2::before {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 4px;
+    background: url(../img/question.png) no-repeat;
+    background-size: 19px 18.5px;
+}
+
+.prof-detail {
+    line-height: 24px;
+    color: #000;
+    font-size: 16px;
+}
+
+.question-box .prof-meta {
+    font-size: 12px;
+    color: #b8bdbf;
+    margin-bottom: 0;
+    margin-top: 6px
+}
+
+.question-box .prof-meta i {
+    margin: 0 5px;
+}
+
+.answer-box {
+    color: #333;
+    padding: 20px 10px 10px
+}
+
+.answer-box .prof-answer-item {
+    border-bottom: 0;
+}
+
+.answer-box time {
+    margin-top: 5px
+}
+
+.answer-box .prof-info {
+    margin-bottom: 10px
+}
+
+.answer-box .prof-info .prof-portrait {
+    border-radius: 2px;
+    border: 1px solid #d7d7d7;
+    float: left;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    margin-right: 8px;
+    border-radius: 18px;
+}
+
+.answer-box .prof-info .prof-portrait img {
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+.answer-box .prof-info .prof-title {
+    font-size: 12px;
+    margin-bottom: 2px;
+    line-height: 20px;
+}
+
+.answer-box .prof-info .prof-title a {
+    font-size: 14px;
+    font-style: normal;
+    color: #20c4cc;
+    margin-right: 8px;
+}
+
+.answer-box .prof-info .prof-company {
+    font-size: 11px;
+    color: #b8bdbf;
+}
+
+.reply-ask-box {
+    margin-top: 10px;
+    background-color: #F9F9F9;
+    border-radius: 2px
+}
+
+.reply-ask-box .reply-ask-item {
+    padding: 6px 0;
+    border-bottom: 1px solid #efefef;
+    margin: 0 6px
+}
+
+.reply-ask-box .reply-ask-item label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #49b318
+}
+
+.reply-ask-box .reply-ask-item label.answer {
+    color: #009ded
+}
+
+.prof-evaluate {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.prof-evaluate .btn-evaluate {
+    display: inline-block;
+    background: #20c4cc;
+    text-align: center;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 2px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 25px;
+    vertical-align: top;
+}
+
+.doctor-info {
+    display: -webkit-box;
+    background: #fff;
+    padding: 15px;
+    position: relative
+}
+
+.doctor-info .doctor-pic {
+    position: relative;
+    width: 61px;
+    min-height: 61px
+}
+
+.doctor-info .doctor-pic .d-pic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 61px;
+    height: 61px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 3px 1px #c8c8c8;
+    box-shadow: 0 1px 3px 1px #c8c8c8
+}
+
+.doctor-info .doctor-pic img {
+    width: 100%;
+    height: 100%
+}
+
+.doctor-info .doctor-detail {
+    -webkit-box-flex: 1;
+    padding: 0 0 0 10px
+}
+
+.doctor-info .doctor-detail .d-name {
+    position: relative;
+    top: -3px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000;
+    font-size: 18px
+}
+
+.doctor-info .doctor-detail .d-info {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 5px;
+    line-height: 1.5
+}
+
+.doctor-info .doctor-detail .d-info span.department {
+    margin-left: 12px
+}
+
+.doctor-info .doctor-detail .desc {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5
+}
+
+.doctor-info .ask-for-doctor {
+    border: 1px solid #0B9DA3;
+    border-radius: 2px;
+    color: #fff;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#56cfdf),color-stop(100%,#54aaca));
+    background: linear-gradient(to bottom,#56cfdf 0,#54aaca 100%);
+    display: inline-block;
+    line-height: 23px;
+    padding: 0 7px;
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+.doctor-num {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    background: #fff;
+    padding: 10px 0
+}
+
+.doctor-num ul {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal
+}
+
+.doctor-num li {
+    display: block;
+    -webkit-box-flex: 1;
+    font-size: 14px;
+    color: #666
+}
+
+.doctor-num li span {
+    display: block;
+    text-align: center;
+    line-height: 1.5
+}
+
+.doctor-num em {
+    color: #54aaca;
+    font-style: normal
+}
+
+.doctor-num li:last-child {
+    border-left: 1px solid #e4e4e4
+}
+
+.doctor-num li:last-child b {
+    display: inline-block;
+    font-weight: 400;
+    position: relative
+}
+
+.doctor-num li:last-child em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap
+}

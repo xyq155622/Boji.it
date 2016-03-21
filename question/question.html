@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>热点问题</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="js/data.js"></script>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="hot-question">
+        热点问题
+    </div>
+
+    <div id="question-list">
+
+    </div>
+</div>
+
+<script>
+    window.onload = function(){
+        var _questionList = $("#question-list");
+
+        var _html;
+        $.each(QuestionList, function(prop, val){
+            _html = '<a class="question-item-box box" href=' + 'answer.html?_id=' + val._id + '>';
+            _html += '<p class="title"><em>问：</em>' + val.title + '</p>';
+            _html += '<p class="content">答：' + val.content + '</p>';
+            _html += '<p class="datetime">' + val.answerTime + '</p>';
+            _html += '</a>';
+
+            _questionList.append(_html);
+        });
+    }
+</script>
+</body>
+</html>

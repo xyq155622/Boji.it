@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>名医答疑</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="js/data.js"></script>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="box question-box clear">
+        <h2 id="_title"></h2>
+
+        <div class="prof-detail">
+            <p id="_subTitle"></p>
+        </div>
+        <div class="prof-meta clear">
+            <time id="_createTime"></time>
+            <span class="name" id="_user_name"></span>
+            <i>|</i>
+            <span id="_user_gender"></span>
+            <i>|</i>
+            <span id="_user_age"></span>
+        </div>
+    </div>
+
+
+    <div class="box answer-box section-bottom">
+        <div class="prof-answer-item">
+            <div class="prof-info" id="_doctor_info">
+            </div>
+
+            <div class="prof-detail">
+                <p id="_content"></p>
+            </div>
+            <div class="reply-ask-box">
+                <div class="reply-ask-box-inner" id="_reply_ask_box_inner">
+
+                </div>
+            </div>
+            <div class="oper-wrap">
+                <div class="prof-evaluate" data-rid="2017080958" data-evaluate="5">
+                    <span class="btn-evaluate">
+                        有帮助 <span id="_doctor_good">(5)</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return encodeURI(r[2]); return null;
+    }
+    window.onload = function(){
+        var question_id = getUrlParam('_id');
+        var question = {};
+        if(question_id) {
+            for (var i in QuestionList) {
+                if(question_id == QuestionList[i]._id) {
+                    question = QuestionList[i];
+                }
+            }
+
+            $('#_title')[0].innerHTML = question.title;
+            $('#_subTitle')[0].innerHTML = question.subTitle;
+            $('#_createTime')[0].innerHTML = question.createTime;
+            $('#_user_name')[0].innerHTML = question.user._name;
+            $('#_user_gender')[0].innerHTML = question.user.gender;
+            $('#_user_age')[0].innerHTML = question.user.age;
+            $('#_content')[0].innerHTML = question.content;
+            $('#_doctor_good')[0].innerHTML = '(' + question.good + ')';
+
+            var doctorInfo = $("#_doctor_info");
+            var _doctor_info = '';
+            _doctor_info += '<time>' + question.answerTime + '</time>';
+            _doctor_info += '<div class="prof-portrait"><a href=' + 'doctor.html?_id=' + question.doctor._id + '><img src=' + question.doctor.picurl + '></a></div>';
+            _doctor_info += '<p class="prof-title"><a href=' + 'doctor.html?_id=' + question.doctor._id + '>' + question.doctor._name + '</a>' + question.doctor.field + '</p>';
+            _doctor_info += '<p class="prof-company">' + question.doctor.company + '</p>';
+            doctorInfo.append(_doctor_info);
+
+            var replyAskBoxInner = $("#_reply_ask_box_inner");
+            var _replyAskBoxInner = '';
+            $.each(question.discussions, function(prop, val){
+                _replyAskBoxInner += '<div class="reply-ask-item"><div class="prof-detail"><p>';
+                if("ASK" == val.key) {
+                    _replyAskBoxInner += '<label class="ask">追问：</label>';
+                } else if ("ANSWER" == val.key) {
+                    _replyAskBoxInner += '<label class="answer">回答：</label>';
+                }
+                _replyAskBoxInner += val.content + '</p></div></div>';
+            });
+            replyAskBoxInner.append(_replyAskBoxInner);
+        }
+    }
+</script>
+</body>
+</html>
