@@ -37,6 +37,44 @@ a {
     display: block;
 }
 
+.nav-list {
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 45px;
+    background: url(../img/news/line.png) left bottom repeat-x;
+    margin-bottom: 5px;
+}
+
+.nav-list a {
+    position: relative;
+    display: inline-block;
+    padding: 12.5px 17px;
+    color: #666;
+    font-size: 14px;
+}
+
+.nav-list .nav-wrapper {
+    overflow: hidden;
+    width: 570px;
+}
+
+.nav-list a.active {
+    color: #34a150
+}
+
+.nav-list a.active:after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid #34a150
+}
+
+
 .hot-question {
     font-size: 18px;
     padding: 10px;
@@ -51,8 +89,7 @@ a {
 .question-item-box {
     display: block;
     position: relative;
-    margin: 0 5px 10px;
-    border: 1px solid #c6c6c6;
+    border-bottom: 1px solid #efefef;
 }
 
 .question-item-box .title {
@@ -62,7 +99,7 @@ a {
 
 .question-item-box .title em {
     font-style: normal;
-    color: #54aaca
+    color: #34a150
 }
 
 .question-item-box .content {
@@ -93,7 +130,6 @@ a {
 }
 
 .wrapper .section-bottom {
-    margin: 0 0 10px;
     background: #fff;
     border-bottom: 1px solid #ecedf0
 }

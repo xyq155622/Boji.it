@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
-<div class="wrapper">
-    <div class="hot-question">
-        热点问题
+<div >
+    <div class="nav-list" id="tabs">
+        <div class="nav-wrapper" id="nav-list">
+        </div>
     </div>
+
 
     <div id="question-list">
 
@@ -20,18 +22,55 @@
 </div>
 
 <script>
+    function getDepartment(id) {
+        for (var i in DepartmentList) {
+            if(id == DepartmentList[i]._id) {
+                return DepartmentList[i];
+            }
+        }
+    }
     window.onload = function(){
+        var _navList = $("#nav-list");
         var _questionList = $("#question-list");
+        var department_id = "dp001";
+        var department = getDepartment(department_id);
 
-        var _html = '';
-        $.each(QuestionList, function(prop, val){
-            _html += '<a class="question-item-box box" href=' + 'answer.html?_id=' + val._id + '>';
-            _html += '<p class="title"><em>问：</em>' + val.title + '</p>';
-            _html += '<p class="content">答：' + val.content + '</p>';
-            _html += '<p class="datetime">' + val.answerTime + '</p>';
-            _html += '</a>';
+
+        var _department = '';
+        $.each(DepartmentList, function(prop, val){
+            if(prop == 0) {
+                _department += '<a class="active" id=' + val._id + '>' + val._name + '</a>';
+            } else {
+                _department += '<a id=' + val._id + '>' +  val._name + '</a>';
+            }
         });
-        _questionList.append(_html);
+        _navList.append(_department);
+
+        var _navListA = $("#nav-list a");
+        for(var i = 0; i < _navListA.length; i++){
+            _navListA[i].onclick = function(e){
+                e.preventDefault(e);
+                for(var i = 0; i < _navListA.length; i++) {
+                    _navListA[i].className = '';
+                }
+                this.className = 'active';
+                department = getDepartment(this.id);
+                updateView();
+            }
+        }
+
+        function updateView() {
+            var _html = '';
+            $.each(department.questions, function (prop, val) {
+                _html += '<a class="question-item-box box" href=' + 'answer.html?_id=' + val._id + '>';
+                _html += '<p class="title"><em>问：</em>' + val.title + '</p>';
+                _html += '<p class="content">答：' + val.content + '</p>';
+                _html += '<p class="datetime">' + val.answerTime + '</p>';
+                _html += '</a>';
+            });
+            _questionList[0].innerHTML = _html;
+        }
+        updateView();
     }
 </script>
 </body>
