@@ -65,7 +65,7 @@
                 _html += '<a class="question-item-box box" href=' + 'answer.html?_id=' + val._id + '>';
                 _html += '<p class="title"><em>问：</em>' + val.title + '</p>';
                 _html += '<p class="content">答：' + val.content + '</p>';
-                _html += '<p class="datetime">' + val.answerTime + '</p>';
+                _html += '<p class="datetime">' + val.answerTime + '<span class="right">' + val.good + '</span></p>';
                 _html += '</a>';
             });
             _questionList[0].innerHTML = _html;

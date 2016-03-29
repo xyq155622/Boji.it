@@ -123,6 +123,22 @@ a {
     margin-bottom: 10px
 }
 
+.question-item-box .datetime .right{
+    min-width: 34px;
+}
+
+.question-item-box .datetime span.right::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 4px;
+    background: url(../img/question/heart.png) no-repeat;
+    background-size: 15px 14.5px;
+}
+
 .wrapper time {
     float: right;
     font-size: 11px;
