@@ -8,7 +8,7 @@ var NewsList = [
         "createDateTime": '2015-12-08 16:01:01',
         "picurl": '../img/recipe/r01.jpg',
         "category": '营养滋补',
-        "tab": '3月前',
+        "tab": '5月前',
         "author": '佚名',
         "source": '菜瓢谷'
     },
@@ -21,7 +21,7 @@ var NewsList = [
         "createDateTime": '2015-11-24 01:01:01',
         "picurl": '../img/recipe/r02.jpg',
         "category": '营养滋补',
-        "tab": '3月前',
+        "tab": '5月前',
         "author": '佚名',
         "source": '菜瓢谷'
     },
@@ -34,7 +34,7 @@ var NewsList = [
         "createDateTime": '2015-11-23 19:01:01',
         "picurl": '../img/recipe/r03.jpg',
         "category": '营养滋补',
-        "tab": '3月前',
+        "tab": '5月前',
         "author": '佚名',
         "source": '菜瓢谷'
     },
@@ -47,7 +47,7 @@ var NewsList = [
         "createDateTime": '2015-11-11 07:01:01',
         "picurl": '../img/recipe/r04.jpg',
         "category": '营养滋补',
-        "tab": '4月前',
+        "tab": '6月前',
         "author": '佚名',
         "source": '菜瓢谷'
     },
@@ -60,7 +60,7 @@ var NewsList = [
         "createDateTime": '2015-11-10 19:01:01',
         "picurl": '../img/recipe/r05.jpg',
         "category": '营养滋补',
-        "tab": '4月前',
+        "tab": '6月前',
         "author": '佚名',
         "source": '菜瓢谷'
     },
@@ -73,7 +73,7 @@ var NewsList = [
         "createDateTime": '2015-11-01 16:01:01',
         "picurl": '../img/recipe/r06.jpg',
         "category": '营养滋补',
-        "tab": '4月前',
+        "tab": '6月前',
         "author": '佚名',
         "source": '菜瓢谷'
     },
@@ -86,7 +86,7 @@ var NewsList = [
         "createDateTime": '2015-08-27 16:01:01',
         "picurl": '../img/recipe/r07.jpg',
         "category": '营养滋补',
-        "tab": '6月前',
+        "tab": '8月前',
         "author": '佚名',
         "source": '菜瓢谷'
     }
