@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
     <script src="../json/recipe.js"></script>
-    <link rel="stylesheet" href="../css/main.css"/>
+    <script>
+        function setActiveStyleSheet(filename){document.write("<link href="+ "../css/" + filename + " rel='stylesheet'>");}
+        var userAgent = navigator.userAgent.toLowerCase();
+        if ((userAgent.search("ipad") > -1))
+            setActiveStyleSheet("tablet.css");
+        else
+            setActiveStyleSheet("main.css");
+    </script>
 </head>
 <body>
 <div class="article">
