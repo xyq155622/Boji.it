@@ -423,21 +423,27 @@ a {
 .news .title{height:46px;background:url(../img/news/line.png) left bottom repeat-x;}
 .news .title .word{float:left;font-size:20px;color:#34a150;padding: 0 6px;height:44px;line-height:44px;border-bottom:2px solid #34a150;}
 .news .element{position:relative;padding:10px 10px 20px 10px;border-bottom:1px solid #efefef;}
-.news .element .type{font-size:14px;color:#1b9f3d;line-height:39px;}
+.news .element .type{color:#1b9f3d;line-height:39px;}
 .news .element .wrap{overflow:hidden;}
 
 .news .element .describe{width:66%;}
-.news .element .describe .name a{font-size:16px;line-height:22px;color: #000;}
+.news .element .describe .name a{line-height:22px;color: #000;}
 .news .element .describe .content{color:#666666;margin-top:6px;overflow: hidden;text-overflow: -o-ellipsis-lastline;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;white-space: normal;}
 @media only screen and (max-width: 500px) {
+    .news .element .type{font-size:14px;}
+    .news .element .describe .name a{font-size:16px;}
     .news .element .describe .content {font-size: 12px;line-height: 20px;max-height: 60px;}
     .news .element .img{padding: 0 0 0 5px;}
     .news .element .foot{font-size:12px;line-height:22px;color:#999999;}
+    .article .neck{font-size: 14px;}
 }
 @media only screen and (min-width: 501px) {
-    .news .element .describe .content {font-size: 15px;line-height: 25px;max-height: 75px;}
+    .news .element .type{font-size:16px;}
+    .news .element .describe .name a{font-size:18px;}
+    .news .element .describe .content {font-size: 16px;line-height: 25px;max-height: 75px;}
     .news .element .img{padding: 0 5px 0 15px;}
-    .news .element .foot{font-size:15px;line-height:22px;color:#999999;position:absolute;bottom:20px;}
+    .news .element .foot{font-size:16px;line-height:22px;color:#999999;position:absolute;bottom:20px;}
+    .article .neck{font-size: 16px;}
 }
 .news .element .img{width:34%;}
 .news .element .img a img{width: 100%;min-height:108px;max-height:140px; display: block;}
@@ -448,7 +454,7 @@ a {
 
 .article{padding: 20px 8px 0; margin: 0 10px; color: #333;}
 .article .title{font-size: 1.5em;font-weight: bold;color: #222;line-height:1.6;}
-.article .neck{color: #aaaaaa;font-size: 14px;margin-bottom: 20px;}
+.article .neck{color: #aaaaaa;margin-bottom: 20px;}
 .article .neck span{padding-right:5px;}
 .article .content{font-size: 16px;line-height: 1.8;}
 .article .content p{margin: 10px 0;}
