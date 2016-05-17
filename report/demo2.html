@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Bojimed 健康报告</title>
+    <meta name="keywords" content="Bojimed,博而济,移动医疗,智慧医院,医院微信,病人管理,微信服务" />
+    <meta name="description" content="Bojimed智慧医院解决方案-重新定义医患沟通，助力您的医院在信息时代腾飞" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <style>
+        html, body { margin: 0; padding: 0;}
+        body {background: #666;}
+        .col-xs-40 { width: 40% }
+        .col-xs-30 { width: 30% }
+        .col-xs-25 { width: 25% }
+        .col-xs-20 { width: 20% }
+        .col-xs-15 { width: 15% }
+        .col-xs-10 { width: 10% }
+        .no-margin-top { margin-top: 0!important;}
+        .text-center { text-align: center;}
+        .text-left { text-align: left;}
+        .text-right { text-align: right;}
+        .text-red { color: red;}
+        .page { font-family:"Microsoft Yahei"; margin: 10px 0; padding: 10px; background: #fff; padding-bottom: 150%; position: relative;}
+        .page .header { position: absolute; left: 10px; top: 10px; right: 10px;}
+        .page .header img { width: 100%; }
+        .page .footer { position: absolute; left: 10px; bottom: 25px; right: 10px;}
+        .page .footer img { width: 100%; }
+        .page .explain { position: absolute; left: 10px; bottom: 10px; right: 10px;}
+        .page .explain p {  margin: 0; font-size: 10px; font-weight: bold; text-align: left;}
+        .page .pagination { position: absolute; left: 10px; bottom: 10px; right: 15px;}
+        .page .pagination p { margin: 0; font-size: 10px; font-weight: bold; text-align: right;}
+
+        @media only screen and (max-width: 321px) {
+            .page .content p { line-height: 1.6; margin: 10px 0; font-size: 14px;}
+        }
+        @media only screen and (min-width: 322px) {
+            .page .content p { line-height: 1.6; margin: 10px 0; font-size: 16px;}
+        }
+        .page .content.font-l p {font-size: 16px;}
+        .page .content { position: absolute; left: 10px; top: 35px; bottom: 45px; right: 10px;}
+        .page .content.item-list p { line-height: 1.2!important;}
+        .page .content span.font-llg { font-family:"Microsoft Yahei"; font-size: 18px; font-weight: 700;}
+        .page .content span.font-lg { font-family:"Microsoft Yahei"; font-size: 16px; font-weight: 900;}
+        .page .content p.indent { text-indent:1.5em; }
+
+        .page .content table { border-collapse:collapse; border:none; font-size: 12px; width: 100%;}
+        .page .content table tr { line-height: 21px;}
+        .page .content table th { border:solid #000 1px; text-align: center; background: #6ea9dd;}
+        .page .content table td { border:solid #000 1px; text-align: center; }
+
+        .page .content table caption { position: relative; line-height: 30px;}
+        .page .content table caption span.text-left { position: absolute; left: 0; font-weight: 900;}
+        .page .content table caption span.text-right { position: absolute; right: 0;}
+        .page .content img { width: 100%;}
+
+        .page .signing-msg { position: absolute; bottom: 50px; right: 10px; font-size: 16px; font-weight: 900;}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <img src="./img/demo2/index-bg.png" alt=""/>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第1页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content font-l">
+            <p><span class="font-llg">尊敬的彭XX先生：</span></p>
+            <p>您好！</p>
+            <p class="indent">感谢您对我们的信任和支持。现将您健康报告呈上，希望能为维护您
+            的健康提供参考。</p>
+            <br/>
+            <br/>
+            <p><span class="font-llg">报告阅读说明：</span></p>
+            <p class="indent">您本次健康报告由健康信息、健康检测主要指标汇总及专家指导建议
+            和健康知识等部分组成。</p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第2页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content font-l">
+            <p class="indent">健康检测数据是您在使用健康检测设备时所采集到的结果，不能覆盖
+                人体全部器官及全部指标。而且与您所使用的健康设备类型和使用方式、
+                使用频率有很大关系，所以这些数据仅能部分反应您的健康状况。可以作
+                为参考，但不具有诊断意义。</p>
+            <p class="indent">本健康报告由广东临床医师协会审核，但由于健康数据数量较少，且
+                缺乏诊断意义，<span class="font-lg">故本报告仅能大致反应您近期健康状况，不能取代临床医
+                学报告。如您有不适症状，请务必及时到医院就诊。</span></p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第3页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <table>
+                <caption>&nbsp;<span class="text-left">● 一般情况</span><span class="text-right">*本数据由用户本人提供</span></caption>
+                <thead>
+                <tr>
+                    <th class="col-xs-25">检查项目</th>
+                    <th class="col-xs-10">提示</th>
+                    <th class="col-xs-15">结果</th>
+                    <th class="col-xs-15">单位</th>
+                    <th class="col-xs-25">正常参考值</th>
+                    <th class="col-xs-10"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>身高</td>     <td></td>   <td>170</td>    <td>cm</td>     <td></td>   <td></td>
+                </tr>
+                <tr>
+                    <td>体重</td>     <td></td>   <td>90</td>   <td>kg</td>     <td></td>   <td></td>
+                </tr>
+                <tr>
+                    <td>体重指数</td> <td class="text-red">↑</td>  <td>31</td>   <td>Kg/m2</td>  <td>18.5-23.9</td> <td></td>
+                </tr>
+                <tr>
+                    <td>运动量</td>   <td></td>   <td>10001</td>  <td>步</td>     <td>10000</td> <td></td>
+                </tr>
+                <tr>
+                    <td>睡眠质量</td> <td></td>   <td></td>       <td></td>       <td></td> <td> </td>
+                </tr>
+                </tbody>
+            </table>
+            <br/>
+            <table>
+                <caption>&nbsp;<span class="text-left">● 个人史</span><span class="text-right">*本数据由用户本人提供</span></caption>
+                <thead>
+                <tr>
+                    <th class="col-xs-25">类别</th>
+                    <th class="col-xs-10">有无</th>
+                    <th class="col-xs-15">时间</th>
+                    <th class="col-xs-30">详情</th>
+                    <th class="col-xs-10"></th>
+                    <th class="col-xs-10"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>饮酒史</td>     <td class="text-red">有</td>    <td>4年</td>     <td>每月2次</td>   <td></td> <td></td>
+                </tr>
+                <tr>
+                    <td>吸烟史</td>     <td>无</td>    <td></td>     <td></td>   <td></td> <td></td>
+                </tr>
+                <tr>
+                    <td>过敏史</td>     <td>无</td>    <td></td>     <td></td>     <td></td> <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第4页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <table>
+                <caption>&nbsp;<span class="text-left">● 既往史</span><span class="text-right">*本数据由用户本人提供</span></caption>
+                <thead>
+                <tr>
+                    <th class="col-xs-20">疾病种类</th>
+                    <th class="col-xs-10">有无</th>
+                    <th class="col-xs-20">严重程度</th>
+                    <th class="col-xs-20">有无就诊</th>
+                    <th class="col-xs-20">控制方法</th>
+                    <th class="col-xs-10"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>高血压</td>   <td>无</td>   <td></td>   <td></td>     <td></td>   <td></td>
+                </tr>
+                <tr>
+                    <td>哮喘病</td>   <td>无</td>   <td></td>   <td></td>     <td></td>   <td></td>
+                </tr>
+                <tr>
+                    <td>冠心病</td>   <td>无</td>   <td></td>  <td></td>  <td></td> <td></td>
+                </tr>
+                <tr>
+                    <td>糖尿病</td>   <td>无</td>   <td></td>  <td></td>  <td></td> <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <br/>
+            <table>
+                <caption>&nbsp;<span class="text-left">● 家族史</span><span class="text-right">*本数据由用户本人提供</span></caption>
+                <thead>
+                <tr>
+                    <th class="col-xs-20">疾病种类</th>
+                    <th class="col-xs-10">有无</th>
+                    <th class="col-xs-20">疾病种类</th>
+                    <th class="col-xs-20">有无</th>
+                    <th class="col-xs-20">疾病种类</th>
+                    <th class="col-xs-10">有无</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>高血压</td>   <td class="text-red">有</td>   <td></td>  <td></td>  <td></td> <td></td>
+                </tr>
+                <tr>
+                    <td>哮喘病</td>   <td>无</td>   <td></td>  <td></td>  <td></td> <td></td>
+                </tr>
+                <tr>
+                    <td>冠心病</td>   <td class="text-red">有</td>   <td></td>  <td></td>  <td></td> <td></td>
+                </tr>
+                <tr>
+                    <td>糖尿病</td>   <td class="text-red">有</td>   <td></td>  <td></td>  <td></td> <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第5页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <table>
+                <caption>&nbsp;<span class="text-left">● 血压</span><span class="text-right">*本数据上传自用户所使用健康设备</span></caption>
+                <thead>
+                <tr>
+                    <th rowspan="2" class="col-xs-40">检测时间</th>
+                    <th rowspan="2" class="col-xs-10">提示</th>
+                    <th colspan="2" class="col-xs-30">检测结果</th>
+                    <th rowspan="2" class="col-xs-20">单位</th>
+                </tr>
+                <tr>
+                    <th class="col-xs-15">舒张压</th>
+                    <th class="col-xs-15">收缩压</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2016-4-17 9:12</td>   <td></td>   <td>80</td>   <td>120</td>     <td>mmHg</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 9:14</td>   <td></td>   <td>80</td>   <td>121</td>     <td>mmHg</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 9:27</td>   <td></td>   <td>81</td>  <td>122</td>  <td>mmHg</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 9:32</td>   <td></td>   <td>83</td>  <td>124</td>  <td>mmHg</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 9:36</td>   <td></td>   <td>83</td>   <td>121</td>     <td>mmHg</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 9:44</td>   <td class="text-red">↑</td>   <td>93</td>  <td>122</td>  <td>mmHg</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 10:30</td>   <td></td>   <td>83</td>  <td>123</td>  <td>mmHg</td>
+                </tr>
+                </tbody>
+            </table>
+            <img src="./img/demo2/xueya.png"/>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第6页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <p><span class="font-lg">高血压小知识：酸奶有助于缓解高血压症状</span></p>
+            <p class="indent">一项最新研究表明：规律性食用益生菌有助于缓解高血压症状，而这些益生菌可通过日常饮用
+                某些酸奶或营养品补充获得。这篇论文7月21日在线发表在《高血压》（Hypertension）杂志上。</p>
+            <p class="indent">研究者对9项针对益生菌与血压升高的随机对照研究数据进行了系统性回顾分析，共涉及543名
+                血压正常或出现血压升高症状的成人受试者。分析结果发现，食用益生菌的人群与对照组比较，平
+                均收缩压和舒张压分别降低了3.6和2.4mmHg。而且，益生菌的保护效果对基线高血压的人群（血
+                压高于130/85mmHg) 最为显著。补充多种益生菌的降压效果比补充单一细菌更为出色（收缩压降
+                幅为5.8mmHg)。</p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第7页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <table>
+                <caption>&nbsp;<span class="text-left">● 血糖</span><span class="text-right">*本数据上传自用户所使用健康设备</span></caption>
+                <thead>
+                <tr>
+                    <th class="col-xs-35">检测时间</th>
+                    <th class="col-xs-10">提示</th>
+                    <th class="col-xs-20">检测结果</th>
+                    <th class="col-xs-15">单位</th>
+                    <th class="col-xs-10">正常下限</th>
+                    <th class="col-xs-10">正常上限</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2016-4-17 15:17</td>   <td></td>   <td>3.64</td>   <td>mmol/L</td>   <td>3.9</td>   <td>6.1</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 15:19</td>   <td></td>   <td>5.51</td>   <td>mmol/L</td>   <td>3.9</td>   <td>6.1</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 15:27</td>   <td></td>   <td>4.25</td>   <td>mmol/L</td>   <td>3.9</td>   <td>6.1</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 15:33</td>   <td></td>   <td>4.92</td>   <td>mmol/L</td>   <td>3.9</td>   <td>6.1</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 15:36</td>   <td></td>   <td>6.1</td>    <td>mmol/L</td>   <td>3.9</td>   <td>6.1</td>
+                </tr>
+                </tbody>
+            </table>
+            <img src="./img/demo2/xuetang.png"/>
+            <p><span class="font-lg">血糖小知识：苦瓜降血糖？没有听起来那么好</span></p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第8页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <p class="indent">苦瓜在民间曾长期被当做一种药材，民间流传着很多关于苦瓜功效的说法。目前
+                比较常见的一种说法是苦瓜能降血糖，市面上也能看到一些宣称可以“辅助降血
+                糖”的苦瓜胶囊。那到底事实上是不是这样呢？</p>
+            <p class="indent">在2007年，唯一一个高质量的有关苦瓜降血糖的临床研究在菲律宾总医院完
+                成。该研究中采用了随机、双盲法，并设置了安慰剂对照组，研究对象是40名成年
+                糖尿病患者。被试需要在每次用餐后，服下含1克苦瓜提取物的胶囊。结果发现，在
+                坚持服用3个月后，被试糖化血红蛋白水平（这一指标常作为一段时间内，平均血浆
+                葡萄糖浓度的参考标准）与安慰剂组无明显差别。</p>
+            <p class="indent">目前，关于苦瓜对于降低血糖究竟能起到多大作用还没有定论。糖尿病患者应该
+                对类似的说法保持谨慎，严格遵循医嘱服药和控制血糖，不要轻易相信网上或民间
+                流传的偏方</p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第9页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <table>
+                <caption>&nbsp;<span class="text-left">● 血氧</span><span class="text-right">*本数据上传自用户所使用健康设备</span></caption>
+                <thead>
+                <tr>
+                    <th class="col-xs-35">检测时间</th>
+                    <th class="col-xs-10">提示</th>
+                    <th class="col-xs-20">检测结果</th>
+                    <th class="col-xs-15">单位</th>
+                    <th class="col-xs-10">正常下限</th>
+                    <th class="col-xs-10">正常上限</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2016-4-17 17:12</td>   <td class="text-red">↓</td>   <td>93</td>   <td>%</td>   <td>95</td>   <td>99</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:14</td>   <td class="text-red">↓</td>   <td>91</td>   <td>%</td>   <td>95</td>   <td>99</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:17</td>   <td class="text-red">↓</td>   <td>92</td>   <td>%</td>   <td>95</td>   <td>99</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:33</td>   <td></td>   <td>95</td>   <td>%</td>   <td>95</td>   <td>99</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:36</td>   <td></td>   <td>95</td>    <td>%</td>   <td>95</td>   <td>99</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:44</td>   <td></td>   <td>96</td>    <td>%</td>   <td>95</td>   <td>99</td>
+                </tr>
+                </tbody>
+            </table>
+            <img src="./img/demo2/xueyang.png"/>
+            <p><span class="font-lg">血氧小知识：富氧水创造新的补氧方式</span></p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第10页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <p class="indent">据专家介绍，人体每天消耗的氧气量大约是600g，以往我们都在靠呼吸补氧，现在，你还可以喝富氧水
+                来补氧。当我们缺氧时，畅饮一瓶高氧含量的富氧水，即可通过消化道粘膜渗透方式吸收水中的高浓度氧
+                气，达到高效、简便、无毒副作用的补氧。</p>
+            <p class="indent">为什么喝富氧水就能补氧？德国科学家瓦尔堡因为对“呼吸酶作用本质和方式的发现”做出重要贡献而
+                荣获1931年的诺贝尔医学奖。针对瓦尔堡教授的研究成果，越来越多的人开始对氧气在消化系统是否能被吸
+                收进行研究。德国Pakdaman 博士是世界知名的富氧水研究专家，最早提出了富氧水和口服氧气疗法，其利
+                用同位素O215追踪技术研究证实富氧水中的氧通过消化道可以被消化道粘膜吸收及利用，一般在饮用富氧
+                水大约5分钟后即开始补氧的效果，其作用可以持续3-4小时。</p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第11页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <table>
+                <caption>&nbsp;<span class="text-left">● 体温（腋下）</span><span class="text-right">*本数据上传自用户所使用健康设备</span></caption>
+                <thead>
+                <tr>
+                    <th class="col-xs-35">检测时间</th>
+                    <th class="col-xs-10">提示</th>
+                    <th class="col-xs-20">检测结果</th>
+                    <th class="col-xs-15">单位</th>
+                    <th class="col-xs-10">正常下限</th>
+                    <th class="col-xs-10">正常上限</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2016-4-17 17:22</td>   <td></td>   <td>36.1</td>   <td>°C</td>   <td>36</td>   <td>37.5</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:27</td>   <td></td>   <td>36.3</td>   <td>°C</td>   <td>36</td>   <td>37.5</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:33</td>   <td></td>   <td>36.6</td>   <td>°C</td>   <td>36</td>   <td>37.5</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:39</td>   <td></td>   <td>36.3</td>   <td>°C</td>   <td>36</td>   <td>37.5</td>
+                </tr>
+                </tbody>
+            </table>
+            <img src="./img/demo2/tiwen.png"/>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第12页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <p><span class="font-lg">体温小知识：婴儿发烧，该不该去医院？</span></p>
+            <p class="indent">如果你的孩子不到三个月，只要体温高于38度，就应该去医院。因为在这个年龄阶段，尤其是
+                新生儿期间（0~28天），10%以上的发烧是严重感染所致，比如菌血症、脑膜炎、肺炎等，而新生
+                儿的免疫系统又很不完善，容易导致严重后果，美国的指南建议医生将发烧的新生儿收住院治疗。
+                1~3个月大的孩子的发烧，很大部分是自限性的病毒感染引起，但也有较大比例是细菌感染所致。
+                同样因为孩子小不安全，鉴别起来很难，医生需要做些检查才能将风险较低的那部分孩子筛查出
+                来，家长自己在家是无法判断风险大小的。</p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第13页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <table>
+                <caption>&nbsp;<span class="text-left">● 心率</span><span class="text-right">*本数据上传自用户所使用健康设备</span></caption>
+                <thead>
+                <tr>
+                    <th class="col-xs-35">检测时间</th>
+                    <th class="col-xs-10">提示</th>
+                    <th class="col-xs-20">检测结果</th>
+                    <th class="col-xs-15">单位</th>
+                    <th class="col-xs-10">正常下限</th>
+                    <th class="col-xs-10">正常上限</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2016-4-17 17:12</td>   <td></td>   <td>83</td>   <td>次/分</td>   <td>60</td>   <td>100</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:14</td>   <td></td>   <td>79</td>   <td>次/分</td>   <td>60</td>   <td>100</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:17</td>   <td></td>   <td>92</td>   <td>次/分</td>   <td>60</td>   <td>100</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:33</td>   <td></td>   <td>85</td>   <td>次/分</td>   <td>60</td>   <td>100</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:36</td>   <td></td>   <td>84</td>   <td>次/分</td>   <td>60</td>   <td>100</td>
+                </tr>
+                <tr>
+                    <td>2016-4-17 17:44</td>   <td></td>   <td>81</td>   <td>次/分</td>   <td>60</td>   <td>100</td>
+                </tr>
+                </tbody>
+            </table>
+            <img src="./img/demo2/xinlv.png"/>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第14页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content">
+            <p><span class="font-lg">心率小知识：保护心脏吃什么保健品</span></p>
+            <p class="indent">心脏是人体生命活动的主宰。心脏主阳气，主血脉，主心智。素食可以防止心血管疾病。黄豆
+                和豆制品如豆腐有利于心脏健康。鱼类(脂肪酸)。鱼类最好与含抗氧化剂的食物同吃(大蒜等)。</p>
+            <p class="indent">适量饮用红酒有利于心脏。注意，只是红酒，白葡萄酒和烈性白酒都不算。动物心脏也有滋补
+                心脏的作用。可以适量食用鸡心，猪心等。预防心脏疾病，早餐尽量多摄取热量，晚餐则尽量少碰
+                油腻食物。晚餐尽量清淡，摄取热量不要超过全天的30%。</p>
+            <p class="indent">特维康辅酶Q10素食胶囊可修复心肌细胞，缓解心率不齐，心绞痛和胸闷气短。</p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第15页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content font-l">
+            <p class="text-center no-margin-top"><span class="font-llg">建议与指导</span></p>
+            <p>尊敬的 彭XX 先生：</p>
+            <p class="indent">首先，感谢您对我们的信任。您最近总体健康状况良好，运动量和睡眠质量令人满意，您上个
+                月的健康状况总体可以打90分，在同龄人中属于较好水平。鉴于您有高血压家族史、糖尿病家族
+                史、冠心病家族史，您需要坚持好的生活习惯，我们真诚的相信您的身体会一直保持健康状态。</p>
+            <p class="indent">您的体重指数为<span class="text-red">30.1</span>，属于肥胖人群。请您注意控制饮食，适当锻炼，来达到控制体重效果，
+                需要注意避免剧烈运动，对您的健康会有更大的好处。</p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第16页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content font-l">
+            <p class="indent">您在上个月里共进行了<span class="text-red">7</span>次血压检测，您对自己的健康十分关注，再接再厉。其中共有7次测量
+                结果属于正常值，血压控制<span class="text-red">良好</span>，鉴于您有高血压病史，我们真诚的提醒您注意控制血压，遵医嘱
+                服药，及时复诊。</p>
+            <p class="indent">您在上个月里共进行了<span class="text-red">6</span>次血氧检测，您对自己的健康十分关注，再接再厉。其中共有6次测量
+                结果属于正常值，您血氧状况良好，无家族哮喘病史，希望能继续保持下去。</p>
+            <p class="indent">您的其他检测结果未见异常。请注意改变生活习惯，坚持定期进行体检，对您的
+                健康会有帮助。</p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第17页</p></div>
+    </div>
+    <div class="page">
+        <div class="header"><img src="./img/br.png" alt=""/></div>
+        <div class="footer"><img src="./img/br.png" alt=""/></div>
+        <div class="content item-list font-l">
+            <p class="text-center no-margin-top"><span class="font-llg">本月健康建议</span></p>
+            <p>一、改变生活习惯：</p>
+            <p class="indent">1、注意饮食，控制体重、防止超重。</p>
+            <p class="indent">2、限盐（小于5克/日），增钾（多吃海产动植物）。</p>
+            <p class="indent">3、注意调节情绪，保持愉悦心态，避免紧张、激动。</p>
+            <p class="indent">4、戒除烟酒。</p>
+            <p class="indent">5、坚持适度锻炼，训练强度须依个人健康状况而异，如练太极拳、散步等。</p>
+            <p>二、继续检测血糖、血压、血氧情况：</p>
+            <p class="indent">1、糖尿病、高血压、心脏病均存在家族聚集现象，40岁之后出现疾病概率大幅
+                度增加，建议经常进行健康检测，关注身体状况。</p>
+        </div>
+        <div class="explain"><p>判断标准及建议内容经广东临床医师协会审核</p></div>
+        <div class="pagination"><p>第18页</p></div>
+    </div>
+</body>
+</html>
